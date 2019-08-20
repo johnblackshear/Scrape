@@ -1,16 +1,35 @@
-<html>
-    ...
-    <body>
-        {{#block "header"}}
-            <h1>Hello World</h1>
-        {{/block}}
- 
-        {{#block "main"}}
-            <p>Lorem ipsum.</p>
-        {{/block}}
- 
-        {{#block "footer"}}
-            <p>&copy; 2019</p>
-        {{/block}}
-    </body>
-</html>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">MONGO SCRAPER</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/saved">Saved Posts</a></li>
+            <li><a class="btn btn-danger scrape-new">Scrape For New Articles</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="jubotron text-center">
+    <div class="overlay">
+    </div>
+    <div class="background-image">
+    </div>
+    <div class="caption">
+        <h1>MONGO SCRAPER</h1>
+        <p></p>
+    </div>
+</div>
+<div class="container-fluid article-container">
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>MONGO SCRAPER</p>
+    </div>
+</footer>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="../../assets/javascript/index.js"></script>

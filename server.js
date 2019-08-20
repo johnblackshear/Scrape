@@ -1,5 +1,18 @@
 var express = require("express");
 
+var mongoose = require("mongoose");
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI, function(error){
+    if (error){
+        console.log(error);
+    }
+    else{
+        console.log("mongoos connenction is successful");
+    }
+});
+
 var expressHandlebars = require("express-handlebars");
 
 var bodyParser = require("body-parser");
